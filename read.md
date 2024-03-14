@@ -1,0 +1,1 @@
+https://huggingface.co/TheBloke/phi-2-GGUF
