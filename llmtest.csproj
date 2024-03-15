@@ -9,12 +9,20 @@
 
   <ItemGroup>
     <PackageReference Include="LLamaSharp" Version="0.10.0" />
-    <PackageReference Include="LLamaSharp.Backend.Cpu" Version="0.10.0" />
     <PackageReference Include="LLamaSharp.Backend.Cuda11" Version="0.10.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="models\mixtral-8x7b-v0.1.Q4_K_M.gguf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="models\phi-2.Q2_K.gguf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\phi-2.Q5_K_M.gguf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="prompt.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
