@@ -49,7 +49,7 @@ namespace llmtest
             stb.AppendLine();
             stb.AppendLine();
             
-            var question = stb.ToString() + "The topic is computers.";
+            var question = stb.ToString() + "how print 1 to n?";
             // run the inference in a loop to chat with LLM
             while (prompt != "stop")
             {
@@ -58,7 +58,7 @@ namespace llmtest
                     Console.Write(text);
                 }
                 Console.WriteLine();
-                question = stb.ToString() + Console.ReadLine() ?? "";
+                question = Console.ReadLine() ?? "";
             }
 
             // save the session
